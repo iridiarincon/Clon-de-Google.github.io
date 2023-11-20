@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 15px; /*Tamaño de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{ /*Enlaces*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{ /*Cabecera*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav{ /*Barra de navegación*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex; /*Hacer elementos flexibles*/
+    list-style: none; /*Quitar decoracion de lista*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{ /*Espacio hacia la derecha y color negro*/
+    margin-right: 10px;
+    color:black;
+}
+
+#profile{
+    width: 50px;
+    border-radius: 50%;
+    margin-left:10px;
+}
+
+main {
+    margin-top: 40px; /*Espaciado exterior de arriba*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 500px;
+    margin: 0 auto; 
+    margin-bottom: 30px; /*Espaciado exterior de abajo*/
+}
+
+main .main-logo img{
+    width: 450px; /*Tamaño de la imagen*/
+}
+
+main .main-input{ /*Cajita del buscador-input*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{ /*Cajita del buscador*/
+    width: 525px;
+    border-radius: 100px; 
+    border: 1px solid rgb(127, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 435px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+
+main .main-buttons{
+    width: 500px;
+    margin: 0 auto; /*Centro*/
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px; /*Tamaño de letra*/
+    border-radius: 8px;
+    padding: 0 15px; /*Espacio interior*/
+    margin-right: 30px;
+}
+
+/*Animación con hover, transicion*/
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px  #000001; /*Efecto de 'sombra'*/
+}
+
+footer{
+    width: 100%;
+    height: 60px; /*Altura del footer*/
+    position: absolute;
+    bottom:0; /*Lo coloca en la parte inferior*/
+    display:grid;
+    grid-template-columns: 1fr 1fr; /*Divide en 2 fracciones iguales*/
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(254, 240, 205);
+    border-top: 1px solid #cecece; /*Borde superior*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none; /*Quitar puntitos*/
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px; /*Espaciado entre los enlaces*/
+    color:#525252; /*Cambiar letras de color*/
+}
